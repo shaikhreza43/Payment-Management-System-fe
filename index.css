@@ -1,0 +1,13 @@
+header{
+    background-color: #666;
+    padding: 10px;
+}
+div.area{
+
+    background-color: darkgrey;
+    padding-bottom: 40%;
+}
+
+*{
+    box-sizing: border-box;
+}

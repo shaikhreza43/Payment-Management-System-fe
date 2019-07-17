@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="paymentApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="col-lg-12">
+            <h3 style="text-align: center" class="text-white">Payment Page</h3>
+        </div>
+    </header>
+    <section class="container" ng-controller="paymentModeCtrl">
+        <div class="row">
+            <div class="col-lg-12 mt-2 area">
+                <h4>Select Payment Mode:</h4>
+                <h5 class="float-right">Total Amount to be paid: Rs.5000/-</h5>
+                <br>
+
+                <ul class="list-unstyled">
+                    <li> <a href="#!debitCard" style="text-decoration: none">Debit Card</a></li>
+                    <li> <a href="#!creditCard" style="text-decoration: none">Credit Card</a></li>
+                    <li> <a href="#!netBanking" style="text-decoration: none">Net Banking</a></li>
+                    <li> <a href="#!wallet" style="text-decoration: none">Paytm Wallet</a></li>
+                    <li> <a href="#!upi" style="text-decoration: none">UPI</a></li>
+
+                </ul>
+                <div style="margin-left: 25%;margin-top: -10%" ng-view></div>
+            </div>
+           
+        </div>
+
+
+    </section>
+
+    <script src="index.js"></script>
+    <script src="router.js"></script>
+
+</body>
+
+</html>
